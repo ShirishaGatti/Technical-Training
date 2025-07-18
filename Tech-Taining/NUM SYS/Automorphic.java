@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// last digit of number and sq should be same 
 class Automorphic{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
