@@ -8,3 +8,10 @@ Java’s Integer.toString(int i, int radix) method takes:
 i → the number you want to convert
 
 radix → the base (must be between 2 and 36)*/
+
+
+
+"I can use 1 << i to generate a power of 2 without Math.pow"
+Math.pow() return double which is slower 
+
+
