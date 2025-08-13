@@ -1,0 +1,10 @@
+String base3 = Integer.toString(n, 3);
+
+
+/*It then divides your number by the base repeatedly, taking remainders, until the whole number is converted.
+
+Java’s Integer.toString(int i, int radix) method takes:
+
+i → the number you want to convert
+
+radix → the base (must be between 2 and 36)*/
