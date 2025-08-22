@@ -1,0 +1,28 @@
+//pq takes O(n log n ) to sort so to optimise we can use set which takes O(n) tc ans sc
+
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        if(nums.length==1)
+        return 1;
+        if(nums.length==0)
+        return 0;
+        PriorityQueue<Integer>pq=new PriorityQueue<>();
+        for(int n:nums){
+            pq.offer(n);
+        }
+        int temp=pq.poll();int count=1,max=1;
+        while(!pq.isEmpty()){
+            if(pq.peek()-temp==1 )
+            {
+                count++;
+                max=Math.max(max,count);
+            }
+            else{
+                if(temp!=pq.peek())
+                count=1;
+            }
+            temp=pq.poll();
+        }
+        return max;
+    }
+}
